@@ -3,6 +3,9 @@
    padding: 0;
    box-sizing: border-box;
  }
+ body {
+   background: rgb(153, 162, 77);
+ }
 .d_flex {
   display: flex;
 }
@@ -14,11 +17,12 @@
   width: 500px;
   background: rgb(74, 170, 200);
   margin: auto;
+  margin-top: 10rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid lightgrey;
-  box-shadow: 1px 1px solid grey;
+  box-shadow: 1px 1px grey;
   border-radius: 10px;
 }
 .pwd_gen {
@@ -31,5 +35,12 @@
   margin: 1rem;
 }
 #name, #lastname {
-  padding: 0.5rem;
+  padding: 0.2rem;
+}
+
+.pwd_gen span {
+  color: white;
+}
+.pwd_gen:active span {
+  color: black;
 }
